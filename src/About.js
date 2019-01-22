@@ -121,7 +121,7 @@ class About extends Component {
                         </Typography>
                         <Typography variant='h7' align='center' color='inherit' paragraph>
                             Graduate teaching assistant and graduate student at Faculty of Electrical Engineering University
-                            of Sarajevo with a bachelor degree in Computer Science and Informatics. Also a proud nerd culture enthusiast.
+                            of Sarajevo with a bachelor degree in Computer Science and Informatics. Also, a proud nerd culture enthusiast.
                         </Typography>
                         <div className={classes.heroButtons}>
                             <Link href='https://github.com/seilabecirovic' className={classes.link}>
