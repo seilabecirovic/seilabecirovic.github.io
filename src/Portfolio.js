@@ -4,7 +4,7 @@ import classNames from 'classnames';
 import Card from '@material-ui/core/Card';
 import CardContent from '@material-ui/core/CardContent';
 import Grid from '@material-ui/core/Grid';
-import CardActionArea from '@material-ui/core/CardActionArea';
+import Fade from '@material-ui/core/Fade';
 import Typography from '@material-ui/core/Typography';
 import Chip from '@material-ui/core/Chip';
 import Link from '@material-ui/core/Link';
@@ -59,36 +59,42 @@ const styles = theme => ({
 class Portfolio extends Component {
 
     projects = [{
+        ID: 0,
         Name: 'NerdHerd',
         Description: 'Nerd Herd website offers you latest news and reviews from the world of music, books, movies, games and TV shows.',
         Link: 'https://github.com/seilabecirovic/NerdHerd',
         Languages: ['PHP', 'HTML', 'CSS', 'JS'],
     },
     {
+        ID: 1,
         Name: 'BrickBreaker',
         Description: 'Repository for faculty project on course Embedded Systems generation 2015/2016 @ Faculty of Electrical Engineering Sarajevo',
         Link: 'https://github.com/seilabecirovic/BrickBreaker',
         Languages: ['C++'],
     },
     {
+        ID: 2,
         Name: 'DP Face Recognition',
         Description: 'Face recognition of doppelgangers using Python, OpenCV and CascadeClassifier',
         Link: 'https://github.com/seilabecirovic/Doppelgangers-Face-Recognition',
         Languages: ['Python'],
     },
     {
+        ID: 3,
         Name: 'Meminator',
         Description: 'Repository for faculty project on course Advance Web Technologies generation 2017/2018 @ Faculty of Electrical Engineering Sarajevo',
         Link: 'https://github.com/acimovicAlek/NWT_2018',
         Languages: ['JAVA', 'Spring Boot', 'ReactJS'],
     },
     {
+        ID: 4,
         Name: 'BP Project',
         Description: 'Repository for faculty project on course Databases generation 2017/2018 @ Faculty of Electrical Engineering Sarajevo',
         Link: 'https://github.com/dzirloT/BP-Projekat-2017',
         Languages: ['JAVA', 'Spring Boot', 'AngularJS'],
     },
     {
+        ID: 5,
         Name: 'Lago',
         Description: 'Repository for faculty project on course Practicum in Business Information Systems generation 2017/2018 @ Faculty of Electrical Engineering Sarajevo',
         Link: 'https://github.com/acimovicAlek/NWT_2018',
@@ -105,6 +111,8 @@ class Portfolio extends Component {
                 <div className={classNames(classes.layout, classes.cardGrid)}>
                     <Grid container spacing={40}>
                         {projects.map(card => (
+                            <Fade in='true' style={{ transformOrigin: '0 0 0' }}
+                            {... { timeout: 1000*(card.ID+1) } }>
                             <Grid item key={card} sm={10} md={6} lg={4}>
                                 <Card className={classes.card}>
                                     <CardContent className={classes.cardContent}>
@@ -128,6 +136,7 @@ class Portfolio extends Component {
                                     </CardContent>
                                 </Card>
                             </Grid>
+                            </Fade>
                         ))}
                     </Grid>
                 </div>

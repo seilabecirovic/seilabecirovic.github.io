@@ -23,7 +23,7 @@ class Nerd extends Component {
     const { classes } = this.props;
     return (
       <React.Fragment>
-        <footer className={classes.footer}>
+        <footer className={classes.footer}>        
           <Typography variant='h4' align='center' color='inherit' gutterBottom>
             How am I a Nerd? Check out some of my other interests:
           </Typography>
