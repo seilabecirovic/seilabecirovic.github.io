@@ -1,15 +1,15 @@
 {
-  "main.css": "/static/css/main.33e84d98.chunk.css",
-  "main.js": "/static/js/main.19d1daba.chunk.js",
-  "main.js.map": "/static/js/main.19d1daba.chunk.js.map",
-  "static/js/1.8dfcfe99.chunk.js": "/static/js/1.8dfcfe99.chunk.js",
-  "static/js/1.8dfcfe99.chunk.js.map": "/static/js/1.8dfcfe99.chunk.js.map",
+  "main.css": "/static/css/main.e87195d0.chunk.css",
+  "main.js": "/static/js/main.41d1d3c8.chunk.js",
+  "main.js.map": "/static/js/main.41d1d3c8.chunk.js.map",
+  "static/js/1.4013e268.chunk.js": "/static/js/1.4013e268.chunk.js",
+  "static/js/1.4013e268.chunk.js.map": "/static/js/1.4013e268.chunk.js.map",
   "runtime~main.js": "/static/js/runtime~main.229c360f.js",
   "runtime~main.js.map": "/static/js/runtime~main.229c360f.js.map",
-  "static/css/main.33e84d98.chunk.css.map": "/static/css/main.33e84d98.chunk.css.map",
+  "static/css/main.e87195d0.chunk.css.map": "/static/css/main.e87195d0.chunk.css.map",
   "static/media/SeilaBecirovic.jpg": "/static/media/SeilaBecirovic.f7a13486.jpg",
   "static/media/background.jpg": "/static/media/background.4260a55b.jpg",
   "index.html": "/index.html",
-  "precache-manifest.5f08a803cdc0c38da4a06ed88821bcef.js": "/precache-manifest.5f08a803cdc0c38da4a06ed88821bcef.js",
+  "precache-manifest.29db8c98ce2110394ca620b438b2d15d.js": "/precache-manifest.29db8c98ce2110394ca620b438b2d15d.js",
   "service-worker.js": "/service-worker.js"
 }
