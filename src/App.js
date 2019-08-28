@@ -9,7 +9,11 @@ import { withStyles } from '@material-ui/core/styles';
 
 const styles = theme => ({
   paperContainer: {
-    backgroundImage: `url(${Background})`
+    backgroundImage: `url(${Background})`,
+    height: "100vh",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center"
   }
 });
 
@@ -26,8 +30,6 @@ class App extends Component {
         <CssBaseline />
         <main className={classes.paperContainer}>
           <About />
-          <Portfolio />
-          <Nerd />
         </main>
       </React.Fragment >
     );

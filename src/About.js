@@ -3,7 +3,8 @@ import PropTypes from 'prop-types';
 import Typography from '@material-ui/core/Typography';
 import Icon from '@mdi/react';
 import Link from '@material-ui/core/Link';
-import { mdiGmail, mdiGithubBox, mdiTelegram, mdiLinkedinBox, mdiGithubCircle, } from '@mdi/js';
+import Fade from '@material-ui/core/Fade';
+import { mdiGmail, mdiGithubBox, mdiTelegram, mdiLinkedinBox, mdiGithubCircle,mdiTelevisionBox } from '@mdi/js';
 import { withStyles } from '@material-ui/core/styles';
 import Me from './Images/SeilaBecirovic.jpg';
 import Avatar from '@material-ui/core/Avatar';
@@ -79,13 +80,17 @@ class About extends Component {
     handlePopoverClose = () => {
         this.setState({ anchorEl: null });
     };
+    
 
     render() {
+        const goodreads = 'M17,12.77C15.96,14.42 14.22,15.5 12.25,15.5C9.07,15.5 6.5,12.7 6.5,9.25C6.5,5.8 9.07,3 12.25,3C14.22,3 15.96,4.08 17,5.73V3H18V15.25C18,20.71 14.54,21 11.5,21C9,21 7.55,19.31 7.13,17H8.14C8.5,18.75 9.54,20 11.5,20C13.72,20 17,20.05 17,15.25V15.25L17,12.77M12.25,4C9.63,4 7.5,6.35 7.5,9.25C7.5,12.15 9.63,14.5 12.25,14.5C14.87,14.5 17,12.15 17,9.25C17,6.35 14.87,4 12.25,4Z'
         const { classes } = this.props;
         const { anchorEl } = this.state;
         const open = Boolean(anchorEl);
         return (
             <React.Fragment>
+                <Fade in='true' style={{ transformOrigin: '0 0 0' }}
+                            {... { timeout: 5000} }>
                 <div className={classes.heroUnit}>
                     <div className={classes.heroImage} align='center' >
                         <Avatar alt='me' src={Me} className={classes.bigAvatar}
@@ -112,16 +117,16 @@ class About extends Component {
                             onClose={this.handlePopoverClose}
                             disableRestoreFocus
                         >
-                            <Typography >Jill of all trades, Bachelor of one, Master of none (yet)...</Typography>
+                            <Typography >Jill of all trades, Bachelor of one, Master of one...</Typography>
                         </Popover>
                     </div>
                     <div className={classes.heroContent} align='center'>
                         <Typography color='inherit' component='h1' variant='h2' align='center' gutterBottom>
-                            Šeila Bećirović
-                        </Typography>
+                            Šeila Bećirović                            
+                        </Typography>                        
                         <Typography variant='h7' align='center' color='inherit' paragraph>
-                            Graduate teaching assistant and graduate student at Faculty of Electrical Engineering University
-                            of Sarajevo with a bachelor degree in Computer Science and Informatics. Also, a proud nerd culture enthusiast.
+                            Full Stack Engineer at Info Studio d.o.o. and former graduate teaching assistant at Faculty of Electrical Engineering University
+                            of Sarajevo with a masters degree in Computer Science and Informatics. Also, a proud nerd culture enthusiast.
                         </Typography>
                         <div className={classes.heroButtons}>
                             <Link href='https://github.com/seilabecirovic' className={classes.link}>
@@ -138,10 +143,21 @@ class About extends Component {
                                 <Icon path={mdiTelegram}
                                     size={3}
                                     color='#cbd0ec' />
+                            </Link>                            
+                            <Link href='https://goodreads.com/seilabecirovic' className={classes.link}>
+                                <Icon path={goodreads}
+                                    size={3}
+                                    color='#cbd0ec' />
+                            </Link>
+                            <Link href='https://www.tvtime.com/en/user/4907527/profile' className={classes.link}>
+                                <Icon path={mdiTelevisionBox}
+                                    size={3}
+                                    color='#cbd0ec' />
                             </Link>
                         </div>
                     </div>
                 </div>
+                </Fade>
             </React.Fragment>
         );
 
