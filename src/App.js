@@ -1,7 +1,5 @@
 import React, { Component } from 'react';
-import Nerd from './Nerd';
 import About from './About';
-import Portfolio from './Portfolio';
 import Background from './Images/background.jpg';
 import PropTypes from 'prop-types';
 import CssBaseline from '@material-ui/core/CssBaseline';
