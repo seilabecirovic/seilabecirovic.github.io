@@ -125,8 +125,7 @@ class About extends Component {
                             Šeila Bećirović                            
                         </Typography>                        
                         <Typography variant='h7' align='center' color='inherit' paragraph>
-                            Full Stack Engineer at Info Studio d.o.o. and former graduate teaching assistant at Faculty of Electrical Engineering University
-                            of Sarajevo with a masters degree in Computer Science and Informatics. Also, a proud nerd culture enthusiast.
+                        Teaching Assistant at Faculty of Electrical Engineering, University of Sarajevo and Full Stack Engineer at Info Studio d.o.o. with a masters degree in Computer Science and Informatics. Also, a proud nerd culture enthusiast.
                         </Typography>
                         <div className={classes.heroButtons}>
                             <Link href='https://github.com/seilabecirovic' className={classes.link}>
